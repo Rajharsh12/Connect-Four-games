@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect Four</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-wrapper">
+
+    <header class="header">
+      <h1>CONNECT <span>FOUR</span></h1>
+      <p class="subtitle">Java-inspired logic, built for the web</p>
+    </header>
+
+    <div class="status-bar">
+      <div class="player-indicator" id="playerIndicator">
+        <span class="disc-preview red" id="turnDisc"></span>
+        <span id="statusText">Red's Turn</span>
+      </div>
+      <div class="score-board">
+        <div class="score red-score">
+          <span class="score-label">Red</span>
+          <span class="score-value" id="redScore">0</span>
+        </div>
+        <div class="score yellow-score">
+          <span class="score-label">Yellow</span>
+          <span class="score-value" id="yellowScore">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-container">
+      <div class="board" id="board"></div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="resetBtn">New Round</button>
+      <button class="btn btn-secondary" id="resetScoreBtn">Reset Scores</button>
+    </div>
+
+  </div>
+
+  <div class="win-overlay" id="winOverlay">
+    <div class="win-card">
+      <h2 id="winText">Red Wins!</h2>
+      <button class="btn" id="playAgainBtn">Play Again</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
